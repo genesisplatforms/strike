@@ -37,13 +37,32 @@ app.use('/api/users', require('./routes/Users/notifications'))
 app.use('/api/wallet', require('./routes/Wallet/wallet'))
 app.use('/api/casino', require('./routes/Casino/Games'))
 
+// app.get('/', (req, res) => {
+//     res.send({ msg: "seccess" })
+// })
+
 if (process.env.NODE_ENV === 'staging' || process.env.NODE_ENV === "production") {
 
     app.use(express.static(path.join(__dirname, 'clinet/build')))
-    app.get('*', (req, res) => {
-        res.sendFile(path.resolve(__dirname, 'client/build', 'index.html'));
-    });
+    // app.get('*', (req, res) => {
+    //     res.sendFile(path.join(__dirname + '/client/build/index.html'));
+    // })
 }
+// app.get('/', (req, res) => {
+//     res.sendFile(path.join(__dirname +'/client/build/index.html'));
+// });
+// app.listen(1000, function () {
+//     console.log("Express server listening")
+// })
+// app.listen(process.env.PORT || PORT, () => {
+//     console.log(`SERVER IS RUNNING ON PORT ${PORT}`)
+// })
+
 
 app.use(express.static('client/build'));
+app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client/build', 'index.html'));
+});
 app.listen(process.env.PORT || 1000);
+// app.use(express.static('build'));
+// app.listen(process.env.PORT || 1000);
