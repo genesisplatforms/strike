@@ -37,9 +37,9 @@ app.use('/api/users', require('./routes/Users/notifications'))
 app.use('/api/wallet', require('./routes/Wallet/wallet'))
 app.use('/api/casino', require('./routes/Casino/Games'))
 
-app.get('/', (req, res) => {
-    res.send({ msg: "seccess" })
-})
+// app.get('/', (req, res) => {
+//     res.send({ msg: "seccess" })
+// })
 
 if (process.env.NODE_ENV === 'staging' || process.env.NODE_ENV === "production") {
 
