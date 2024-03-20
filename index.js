@@ -51,10 +51,12 @@ if (process.env.NODE_ENV === 'staging' || process.env.NODE_ENV === "production")
 // app.get('/', (req, res) => {
 //     res.sendFile(path.join(__dirname +'/client/build/index.html'));
 // });
-app.listen(1000, function () {
-    console.log("Express server listening")
+// app.listen(1000, function () {
+//     console.log("Express server listening")
+// })
+app.listen(process.env.PORT || PORT, () => {
+    console.log(`SERVER IS RUNNING ON PORT ${PORT}`)
 })
-
 
 // app.use(express.static('build'));
 // app.listen(process.env.PORT || 1000);
