@@ -5,5 +5,5 @@
 
 new changes 
 git add .
-git commit -m 'deply
+git commit -m 'deply'
 git push
