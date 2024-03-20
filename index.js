@@ -45,5 +45,5 @@ if (process.env.NODE_ENV === 'staging' || process.env.NODE_ENV === "production")
     });
 }
 
-// app.use(express.static('client/build'));
+app.use(express.static('client/build'));
 app.listen(process.env.PORT || 1000);
