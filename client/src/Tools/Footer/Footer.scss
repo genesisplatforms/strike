@@ -1,0 +1,99 @@
+.Footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: auto;
+  padding: 100px 5%;
+  background-color: #010135;
+  border-top: 1px solid #4b657726;
+  .FooterTop {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    .SiteMapDiv {
+      display: flex;
+      margin-right: 30px;
+      flex-direction: column;
+      width: 100%;
+      h1 {
+        font-size: 20px;
+        font-weight: 400;
+        color: #ffffff;
+      }
+      .SiteMapDivList {
+        display: flex;
+        flex-direction: column;
+        a {
+          padding: 0px;
+          font-size: 15px;
+          font-weight: 300;
+          color: #ffffff;
+          text-decoration: unset;
+          margin-top: 20px;
+          // white-space: nowrap;
+          margin-right: 20px;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .Footer2 {
+    border-top: 2px solid white;
+    padding-top: 30px;
+    margin-top: 30px;
+    width: 100%;
+    h1 {
+      color: white;
+      span{
+        font-size: 15px;
+        font-weight: 400;
+      }
+    }
+  }
+  .Footer3 {
+    border-top: 2px solid white;
+    padding-top: 30px;
+    margin-top: 30px;
+    width: 100%;
+    h1 {
+      color: white;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    p {
+      color: white;
+      font-size: 12px;
+      font-weight: 300;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  .Footer {
+    padding: 20px 5%;
+    .FooterTop {
+      flex-direction: column;
+      width: 100%;
+      .SiteMapDiv {
+        width: 100%;
+        padding: 20px 0px;
+        .SiteMapDivList {
+          flex-direction: column;
+          a {
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1400px) {
+  .Footer {
+    padding: 20px 20%;
+
+  }
+}

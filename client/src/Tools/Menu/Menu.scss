@@ -1,0 +1,226 @@
+.Menu {
+  display: flex;
+  width: 100vw;
+  height: calc(100vh - 80px);
+  position: fixed;
+  right: 0;
+  top: 80px;
+  z-index: 9;
+  animation: example 0.3s ease-out;
+  background-color: #0000009e;
+
+  .MenuBoxShadow {
+    // background-color: #0000009e;
+    backdrop-filter: blur(2px);
+    width: 70vw;
+    height: 100vh;
+  }
+  .MenuList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
+    height: 100%;
+    background-color: #2e05e9;
+
+    .MenuListTop {
+      padding: 10px 20px 40px 20px;
+      position: relative;
+      width: 100%;
+      .MenuMain,
+      .MenuMain2 {
+        padding-top: 20px;
+        width: 100%;
+        .MenuMainBox {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          margin-bottom: 20px;
+          cursor: pointer;
+
+          h1,
+          a {
+            font-size: 20px;
+            font-weight: 400;
+            color: white;
+            text-decoration: unset;
+          }
+
+          img {
+            width: 30px;
+            filter: invert(1);
+          }
+        }
+        .MenuMainBox:hover {
+          h1,
+          a {
+            color: rgb(219, 219, 219);
+          }
+        }
+      }
+      .MenuMain2 {
+        border-top: 3px solid #d4d4d4;
+        margin-top: 20px;
+      }
+      .MenuFooter {
+        display: flex;
+        justify-content: center;
+        padding-top: 25px;
+        margin-top: 25px;
+        border-top: 3px solid #d4d4d4;
+
+        h5 {
+          color: #ffffff;
+          font-weight: 300;
+          font-size: 12px;
+        }
+      }
+      // MenuMakers
+      .MenuMakers {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        // padding: 10px 40px 40px 40px;
+        background-color: #2e05e9;
+        animation: categories 0.3s ease-out;
+        .MenuMakersHeader {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: calc(100% + 0px);
+          margin-bottom: 20px;
+          padding: 15px 0px;
+          border-bottom: 1px solid #ffffff;
+          position: relative;
+          h1 {
+            font-size: 20px;
+            font-weight: 300;
+            color: #ffffff;
+            cursor: pointer;
+          }
+          h1:hover {
+            color: rgb(10, 10, 10);
+          }
+          img {
+            position: absolute;
+            cursor: pointer;
+            left: 20px;
+            transform: rotate(180deg);
+            width: 30px;
+            filter: invert(1);
+          }
+        }
+        .MenuMakersList {
+          width: 100%;
+          padding: 10px 40px 40px 40px;
+          .MenuMakersListBox {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+            a {
+              font-size: 20px;
+              font-weight: 400;
+              color: #ffffff;
+              cursor: pointer;
+              text-decoration: unset;
+            }
+            a:hover {
+              color: rgb(219, 219, 219);
+            }
+          }
+          .MenuMakersListBox:nth-child(2) {
+            img {
+              -webkit-transform: scaleX(-1);
+              transform: scaleX(-1);
+            }
+          }
+        }
+      }
+    }
+    .MenuListFooter {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: calc(100% - 40px);
+      height: auto;
+      border-top: 3px solid #d4d4d4;
+      padding: 20px 20px 40px 20px;
+      margin: 0px 20px;
+
+      p {
+        color: white;
+        text-align: center;
+      }
+      a {
+        color: white;
+        text-decoration: unset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 10px 20px;
+        font-size: 20px;
+        font-weight: 600;
+        border: 2px solid white;
+        border-radius: 20px;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+@keyframes example {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes categories {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@media (max-width: 1190px) {
+  .Menu {
+    width: 100%;
+    top: 66px;
+    height: 100%;
+    .MenuBoxShadow {
+      display: none;
+    }
+    .MenuList {
+      width: 100vw;
+      height: calc(100% - 66px);
+      .MenuListTop{
+
+        padding: 10px 5% 40px 5%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .Menu {
+    width: 100vw;
+    .MenuBoxShadow {
+      background-color: #00000000;
+      width: 0%;
+    }
+    .MenuList {
+      width: 100%;
+    padding: 0px 20%;
+
+      .MenuListTop{
+        width: 100%;
+      }
+    }
+  }
+}

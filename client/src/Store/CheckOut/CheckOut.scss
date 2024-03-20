@@ -1,0 +1,611 @@
+.CheckOut {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    backdrop-filter: blur(20px);
+    padding-bottom: 100px;
+
+    .CheckOutListHeader {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        z-index: 10;
+        height: auto;
+        width: 100%;
+        .CheckOutListHeaderTop {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            border-bottom: 1px solid #e2e2e2;
+            padding: 50px 0px 30px 0px;
+
+            h1 {
+                display: flex;
+                flex-direction: column;
+                color: #000000;
+                font-weight: 300;
+                font-size: 28px;
+                span {
+                    color: #1d1d1f;
+                    font-weight: 300;
+                    font-size: 15px;
+                    margin-top: 10px;
+                }
+            }
+            h2 {
+                padding: 10px 25px;
+                border-radius: 20px;
+                color: white;
+                font-weight: 300;
+                font-size: 15px;
+                background-color: #007bff;
+                cursor: pointer;
+                margin-top: 10px;
+            }
+            h2:hover {
+                background-color: #1888ff;
+            }
+        }
+    }
+    .CheckOutList {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        z-index: 20;
+        padding: 20px 0px;
+        
+
+        .CheckOutListItems {
+            width: 100%;
+            overflow-y: scroll;
+            .CheckOutListItemsBox {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 10px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #e2e2e2;
+
+                .CheckOutListItemsBoxLeft {
+                    display: flex;
+                    align-items: center;
+                    img {
+                        width: 80px;
+                        cursor: pointer;
+                    }
+                    span {
+                        margin-left: 20px;
+                        h1 {
+                            font-size: 13px;
+                            color: rgb(0, 0, 0);
+                            font-weight: 400;
+                        }
+                        h1:hover {
+                            text-decoration: underline;
+                            cursor: pointer;
+                        }
+                        h2 {
+                            font-size: 10px;
+                            color: #1d1d1f;
+                            font-weight: 400;
+                        }
+                    }
+                }
+                .CheckOutListItemsBoxRight {
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: center;
+                    flex-direction: column;
+                    h2 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                        font-size: 17px;
+                        color: #000000;
+                        font-weight: 500;
+                        span {
+                            font-size: 12px;
+                            font-weight: 300;
+                            color: #3e3e3e;
+                        }
+                    }
+                    h3 {
+                        font-size: 13px;
+                        color: #007bff;
+                        font-weight: 300;
+                        margin-top: 20px;
+                        cursor: pointer;
+                    }
+                    h3:hover {
+                        color: #1888ff;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .CheckOutListFinal {
+            width: 100%;
+            border-bottom: 1px solid #e2e2e2;
+            padding-bottom: 20px;
+
+            .CheckOutListFinalSub {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-bottom: 20px;
+                border-bottom: 1px solid #e2e2e2;
+                padding-top: 20px;
+                margin-left: 40%;
+                .CheckOutListFinalLeft {
+                    h2 {
+                        font-size: 16px;
+                        color: #1d1d1f;
+                        font-weight: 300;
+                        margin-top: 8px;
+                    }
+                }
+                .CheckOutListFinalRight {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    h2 {
+                        font-size: 16px;
+                        color: #1d1d1f;
+                        font-weight: 300;
+                        margin-top: 8px;
+                    }
+                }
+            }
+            .CheckOutListFinalTotal {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-top: 10px;
+                width: 100%;
+                padding-left: 40%;
+
+                h2 {
+                    font-size: 22px;
+                    color: #000000;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    .CheckOutNavPath {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        h3:first-child {
+            color: black;
+        }
+        h3 {
+            font-size: 14px;
+            font-weight: 300;
+            cursor: pointer;
+        }
+        h3:hover {
+            text-decoration: underline;
+        }
+        img {
+            min-width: 15px;
+            max-width: 15px;
+            min-height: 10px;
+            max-height: 10px;
+            transform: rotate(0deg);
+            margin: 0px 5px;
+        }
+    }
+
+    // Page 1 Billing information
+    .CheckOutBilling {
+        padding: 0px 0px;
+        width: 100%;
+
+        .CheckOutBillingHeader {
+            padding-top: 20px;
+
+            h1 {
+                color: #000000;
+                font-weight: 500;
+                font-size: 32px;
+            }
+        }
+        .CheckOutBillingInputs {
+            padding: 20px 0px;
+            .CheckOutBillingInputsAddress,
+            .CheckOutBillingInputsContact {
+                border-bottom: 1px solid #e2e2e2;
+                padding-bottom: 20px;
+
+                h1 {
+                    color: #000000;
+                    font-weight: 500;
+                    font-size: 25px;
+                    padding: 20px 0px;
+                }
+                .CheckOutBillingInputsBox {
+                    margin-bottom: 13px;
+                    width: 70%;
+                    input,
+                    select {
+                        width: 100%;
+                        border: 1px solid #b8b8b8;
+                        outline: none;
+                        padding: 16px 20px;
+                        border-radius: 10px;
+                        font-size: 20px;
+                        font-weight: 300;
+                        -webkit-appearance: none;
+                        background-color: white;
+                        color: #4e4e4e;
+                    }
+                    input:hover,
+                    select:hover {
+                        border: 1px solid #007bff;
+                    }
+                    input:focus,
+                    select:focus {
+                        border: 1px solid #007bff;
+                        outline: 1px solid #007bff;
+                    }
+                    input::placeholder,
+                    select::placeholder {
+                        font-size: 18px;
+                        color: #4e4e4e;
+                    }
+                    span {
+                        display: flex;
+                        align-items: center;
+                        margin-top: 10px;
+                        img {
+                            width: 15px;
+                            margin-right: 10px;
+                        }
+                        p {
+                            color: #000000;
+                            font-weight: 300;
+                            font-size: 15px;
+                        }
+                    }
+                }
+                // CheckOutBillingInputsAddress_Zipcode_City
+                .CheckOutBillingInputsAddress_Zipcode_City {
+                    display: flex;
+                    gap: 20px;
+                    width: 70%;
+                }
+                .CheckOutBillingInputsAddressPayment {
+                    .CheckOutBillingInputsAddressPaymentHeader {
+                        display: flex;
+                        align-items: center;
+                        input[type="checkbox"] {
+                            position: relative;
+                            cursor: pointer;
+                        }
+                        input[type="checkbox"]:before {
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            width: 16px;
+                            height: 16px;
+                            top: 0;
+                            left: 0;
+                            border: 1px solid #555555;
+                            border-radius: 3px;
+                            background-color: white;
+                        }
+                        input[type="checkbox"]:checked:after {
+                            content: "";
+                            display: block;
+                            width: 3px;
+                            height: 8px;
+                            border: solid black;
+                            border-width: 0 2px 2px 0;
+                            -webkit-transform: rotate(45deg);
+                            -ms-transform: rotate(45deg);
+                            transform: rotate(45deg);
+                            position: absolute;
+                            top: 3px;
+                            left: 6px;
+                        }
+                        p {
+                            margin: 18px 0px 0px 25px;
+                            font-size: 15px;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+        }
+        .CheckOutBillingContinue {
+            width: 100%;
+            h2 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 70%;
+                padding: 20px 25px;
+                border-radius: 10px;
+                color: white;
+                font-weight: 300;
+                font-size: 19px;
+                background-color: #007bff;
+                cursor: pointer;
+                margin-top: 10px;
+            }
+            h2:hover {
+                background-color: #1888ff;
+            }
+        }
+    }
+    //  Page 2 Payment
+    .CheckOutPayment {
+        padding: 0px 0px;
+        width: 100%;
+        h6 {
+            font-size: 30px;
+            color: #1d1d1f;
+            font-weight: 400;
+            margin-top: 8px;
+        }
+        .CheckOutListFinal {
+            width: 100%;
+            .CheckOutListFinalSub {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-bottom: 20px;
+                border-bottom: 1px solid #e2e2e2;
+                padding-top: 20px;
+                .CheckOutListFinalLeft {
+                    h2 {
+                        font-size: 16px;
+                        color: #1d1d1f;
+                        font-weight: 300;
+                        margin-top: 8px;
+                    }
+                }
+                .CheckOutListFinalRight {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    h2 {
+                        font-size: 16px;
+                        color: #1d1d1f;
+                        font-weight: 300;
+                        margin-top: 8px;
+                    }
+                }
+            }
+            .CheckOutListFinalTotal {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-top: 10px;
+                width: 100%;
+
+                h2 {
+                    font-size: 22px;
+                    color: #000000;
+                    font-weight: 500;
+                }
+            }
+        }
+        .ConfirmPaymentBtn {
+            width: 100%;
+            background-color: white;
+            h1 {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+                padding: 20px 25px;
+                border-radius: 10px;
+                color: white;
+                font-weight: 300;
+                font-size: 20px;
+                background-color: #007bff;
+                cursor: pointer;
+                margin-top: 30px;
+            }
+        }
+        .ConfirmPaymentBtn:hover {
+            h1 {
+                background-color: #1888ff;
+            }
+        }
+    }
+
+    .CheckOutListFinalCheckOut {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        width: 100%;
+        .CheckOutListFinalCheckOutBox {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #f5f5f7;
+            width: 400px;
+            padding: 25px 40px;
+            margin-top: 40px;
+            border-radius: 10px;
+            h3 {
+                font-size: 19px;
+                color: #1d1d1f;
+                font-weight: 300;
+            }
+            h2 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 20px 25px;
+                border-radius: 20px;
+                color: white;
+                font-weight: 300;
+                font-size: 18px;
+                background-color: #007bff;
+                cursor: pointer;
+                width: 100%;
+                margin-top: 20px;
+            }
+            h2:hover {
+                background-color: #1888ff;
+            }
+        }
+    }
+}
+
+@media (max-width: 1190px) {
+    .CheckOut {
+        padding: 0px 15px;
+        padding-bottom: 70px;
+        .CheckOutListHeader {
+            background-color: white;
+            padding: 0px 0px 10px 0px;
+            .CheckOutListHeaderTop {
+                padding: 20px 0px 10px 0px;
+                flex-direction: column;
+                h2 {
+                    margin-top: 5px;
+                    color: #007bff;
+                    background-color: white;
+                }
+                h2:hover {
+                    background-color: white;
+                }
+            }
+        }
+        .CheckOutList {
+            padding: 0px 0px;
+            .CheckOutListItems {
+                padding-top: 0px;
+                .CheckOutListItemsBox {
+                    width: 100%;
+                    padding-bottom: 20px;
+                    .CheckOutListItemsBoxLeft {
+                        width: 80%;
+                        justify-content: center;
+                        span {
+                            margin-left: 0px;
+
+                            flex-direction: column;
+                            display: flex;
+                            align-items: flex-start;
+                            justify-content: start;
+                            width: 100%;
+                        }
+                    }
+                    .CheckOutListItemsBoxRight {
+                        display: flex;
+                        width: 20%;
+                        justify-content: space-between;
+                    }
+                }
+            }
+        }
+        .CheckOutNavPath {
+            margin-top: 15px;
+        }
+        // Page 1 Billing information
+        .CheckOutBilling {
+            .CheckOutBillingHeader {
+                h1 {
+                    font-size: 25px;
+                }
+            }
+            .CheckOutBillingInputs {
+                .CheckOutBillingInputsAddress,
+                .CheckOutBillingInputsContact {
+                    h1 {
+                        font-size: 20px;
+                    }
+                    .CheckOutBillingInputsAddressPayment {
+                        .CheckOutBillingInputsAddressPaymentHeader {
+                            margin-top: 30px;
+                            p {
+                                color: #000000;
+                                font-weight: 300;
+                                font-size: 14px;
+                                margin: 0px 0px 0px 15px;
+                            }
+                        }
+                    }
+                    .CheckOutBillingInputsBox {
+                        width: 100%;
+                    }
+                    .CheckOutBillingInputsAddress_Zipcode_City {
+                        width: 100%;
+                    }
+                }
+            }
+            .CheckOutBillingContinue {
+                width: 100%;
+                h2 {
+                    width: 100%;
+                }
+            }
+        }
+        //  Page 2 Payment
+        .CheckOutPayment {
+            padding-bottom: 60px;
+
+            .ConfirmPaymentBtn {
+                color: white;
+                border-top: 1px solid #e2e2e2;
+
+                padding: 15px;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                h1 {
+                    margin-top: 0px;
+                padding: 15px 25px;
+
+                }
+                .ConfirmPayment {
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1400px) {
+    .CheckOut {
+        .CheckOutListHeader {
+            padding-right: 20%;
+            padding-left: 20%;
+        }
+        .CheckOutList {
+            padding-right: 20%;
+            padding-left: 20%;
+            .CheckOutListFinal {
+                // padding-right: 20%;
+                // padding-left: 20%;
+            }
+        }
+        .CheckOutNavPath {
+            padding-right: 20%;
+            padding-left: 20%;
+        }
+        .CheckOutBilling {
+            padding-right: 20%;
+            padding-left: 20%;
+        }
+        .CheckOutPayment {
+            padding-right: 20%;
+            padding-left: 20%;
+        }
+
+        .CheckOutListFinalCheckOut {
+            padding-right: 20%;
+            padding-left: 20%;
+        }
+    }
+}

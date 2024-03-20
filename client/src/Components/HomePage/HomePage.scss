@@ -1,0 +1,17 @@
+.HomePage {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+
+}
+@media (max-width: 1190px) {
+    .HomePage {
+
+    }
+}
+@media screen and (min-width: 1400px) {
+    .HomePage {
+
+    }
+}

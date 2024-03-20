@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  transition: 0s ease-in-out;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  text-decoration: none;
+  input {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+  }
+}
+
+.App {
+  margin: 0;
+  // height: calc(100vh - 60px);
+  width: auto;
+  background-color: white;
+}
+html {
+  width: 100vw;
+  background-color: #ffffff;
+}

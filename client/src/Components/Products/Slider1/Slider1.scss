@@ -1,0 +1,489 @@
+.Slider1 {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    background-color: black;
+
+    .Slider1Header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0px;
+        background-color: #0000003c;
+        backdrop-filter: blur(40px);
+        position: sticky;
+        top: 0px;
+        z-index: 22;
+        height: 60px;
+
+        h1 {
+            color: white;
+            font-weight: 300;
+            font-size: 18px;
+        }
+        h2 {
+            padding: 10px 25px;
+            border-radius: 20px;
+            color: white;
+            font-weight: 300;
+            font-size: 15px;
+            background-color: #007bff;
+            cursor: pointer;
+        }
+        h2:hover{
+            background-color: #1888ff;
+            
+        }
+    }
+    .Slider1Top {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        .Slider1TopVideo {
+            display: flex;
+            position: relative;
+            align-items: flex-start;
+            justify-content: start;
+            flex-direction: column;
+            width: 100%;
+            max-height: 70vh;
+            .Slider1TopVideoGradiant {
+                position: absolute;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                background: rgb(0, 0, 0);
+                background: linear-gradient(
+                    0deg,
+                    rgba(0, 0, 0, 0.8225665266106442) 0%,
+                    rgba(255, 255, 255, 0) 17%,
+                    rgba(138, 138, 138, 0) 46%,
+                    rgba(255, 255, 255, 0) 72%,
+                    rgba(0, 0, 0, 0.8225665266106442) 100%
+                );
+                z-index: 2;
+            }
+            video {
+                height: 100%;
+                width: 100%;
+                max-height: 70vh;
+                z-index: 1;
+                border-radius: 50px;
+            }
+        }
+        .Slider1TopBootom {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            padding: 100px 0px 0px 0px;
+            background-color: black;
+            h1 {
+                text-align: center;
+                color: rgb(255, 255, 255);
+                font-weight: 300;
+                font-size: 40px;
+            }
+            h2 {
+                text-align: center;
+                font-weight: 400;
+                font-size: 18px;
+                color: rgb(0, 123, 255);
+                white-space: nowrap;
+                margin-top: 50px;
+            }
+            h3 {
+                margin-top: 100px;
+                width: 50%;
+                text-align: center;
+                color: rgb(255, 255, 255);
+                font-weight: 600;
+                font-size: 50px;
+            }
+            .Slider1TopBootomIMG {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                width: 100%;
+                height: 50vh;
+                img:nth-child(1) {
+                    position: absolute;
+                    width: auto;
+                    height: 70%;
+                    left: 55%;
+                    opacity: 0.6;
+                }
+                img:nth-child(2) {
+                    width: auto;
+                    height: 100%;
+                    z-index: 2;
+                }
+                img:nth-child(3) {
+                    position: absolute;
+                    width: auto;
+                    height: 70%;
+                    right: 55%;
+                    opacity: 0.6;
+                }
+            }
+            h4 {
+                span {
+                    color: white;
+                }
+                text-align: start;
+                font-weight: 400;
+                font-size: 18px;
+                color: #a1a1a6;
+                margin-top: 50px;
+                width: 50%;
+            }
+        }
+        .Slider1TopBootomSlider1TopBootom1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+            padding: 100px 0px;
+            h2 {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                align-items: flex-start;
+                font-size: 45px;
+                background: -webkit-linear-gradient(#a476e8, #ffffff);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                span {
+                    font-size: 17px;
+                    font-weight: 400;
+                }
+            }
+        }
+        .Slider1TopBootomSlider1TopBootom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 100px 0px;
+            h1 {
+                padding-right: 50px;
+                span {
+                    color: white;
+                }
+                text-align: start;
+                font-weight: 400;
+                font-size: 18px;
+                color: #a1a1a6;
+                cursor: pointer;
+                margin-top: 50px;
+                width: 60%;
+            }
+            img {
+                width: 30%;
+            }
+        }
+    }
+    .Slider1Installation {
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        padding: 100px 0px;
+        h1 {
+            text-align: center;
+            color: rgb(255, 255, 255);
+            font-weight: 300;
+            font-size: 40px;
+        }
+        h2 {
+            text-align: center;
+            font-weight: 400;
+            font-size: 18px;
+            color: rgb(0, 123, 255);
+            white-space: nowrap;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .Slider1InstallationVideo {
+            border: 3px solid #a9a9a980;
+            border-radius: 30px;
+            padding: 25px 32px;
+            margin-top: 50px;
+            video {
+                height: 100%;
+                width: 100%;
+                max-height: 70vh;
+                z-index: 1;
+                border-radius: 10px;
+            }
+        }
+    }
+    .Slider1Banner {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 80px 0px 0px 50px;
+        background-color: white;
+        .Slider1BannerTop {
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            h1 {
+                color: rgb(0, 0, 0);
+                font-weight: 500;
+                font-size: 55px;
+                width: 100%;
+                h3 {
+                    width: 100%;
+                    margin-top: 50px;
+                    span {
+                        color: rgb(0, 0, 0);
+                    }
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: #a1a1a6;
+                }
+            }
+            h2 {
+                font-weight: 400;
+                font-size: 18px;
+                color: rgb(0, 123, 255);
+                white-space: nowrap;
+            }
+        }
+        .Slider1BanneBottom {
+            display: flex;
+            width: 100%;
+            background: rgb(255, 255, 255);
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0) 47%, rgba(221, 221, 221, 0.8141631652661064) 100%);
+            border-radius: 20px;
+            margin-top: 60px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .Slider1Benefit {
+        padding: 100px 0px;
+        background-color: #f5f5f7;
+        width: 100%;
+        .Slider1BenefitHeader {
+            background-color: rgb(255, 255, 255);
+            padding: 50px 20px 0px 20px;
+            border-radius: 10px 10px 0px 0px;
+            h1 {
+                color: rgb(0, 0, 0);
+                font-weight: 400;
+                font-size: 42px;
+            }
+            h2 {
+                font-weight: 400;
+                font-size: 18px;
+                color: #a1a1a6;
+                cursor: pointer;
+            }
+        }
+        .Slider1BenefitList {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: white;
+            width: 100%;
+            padding: 50px 0px;
+            text-align: center;
+
+            .Slider1BenefitBox {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                flex: 1;
+                flex-basis: 300px;
+                margin: 40px 20px;
+                img {
+                    width: 100%;
+                    max-height: 340px;
+                    min-height: 340px;
+                    // object-fit: cover;
+                    border-radius: 5px;
+                }
+                h2 {
+                    color: #000000;
+                    font-weight: 400;
+                    font-size: 35px;
+                    margin-top: 20px;
+                }
+                h3 {
+                    text-align: center;
+                    font-weight: 300;
+                    font-size: 18px;
+                    margin-top: 10px;
+                    color: #a1a1a6;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1190px) {
+    .Slider1 {
+        .Slider1Header {
+            padding: 20px 15px;
+        }
+        .Slider1Top {
+            .Slider1TopBootom {
+                padding: 70px 15px 0px 15px;
+                h1 {
+                    font-size: 30px;
+                }
+                h3 {
+                    font-size: 35px;
+                    width: 70%;
+                }
+                .Slider1TopBootomIMG {
+                    img:nth-child(1) {
+                        height: 40%;
+                        left: 55%;
+                    }
+                    img:nth-child(2) {
+                        height: 60%;
+                        z-index: 2;
+                    }
+                    img:nth-child(3) {
+                        height: 40%;
+                        right: 55%;
+                    }
+                }
+                h4 {
+                    margin-top: 0px;
+                    font-size: 25px;
+                    width: 80%;
+                }
+            }
+            .Slider1TopBootomSlider1TopBootom1 {
+                padding: 80px 20px;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .Slider1TopBootomSlider1TopBootom {
+                flex-direction: column-reverse;
+                padding: 20px 15px 20px 25px;
+                h1 {
+                    padding-right: 50px;
+                    span {
+                        color: white;
+                    }
+                    text-align: start;
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: #a1a1a6;
+                    cursor: pointer;
+                    margin-top: 80px;
+                    width: 100%;
+                }
+                img {
+                    width: 50%;
+                }
+            }
+        }
+        .Slider1Installation {
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+            padding: 100px 15px 80px 15px;
+            h1 {
+                text-align: center;
+                color: rgb(255, 255, 255);
+                font-weight: 300;
+                font-size: 40px;
+            }
+            h2 {
+                text-align: center;
+                font-weight: 400;
+                font-size: 18px;
+                color: rgb(0, 123, 255);
+                white-space: nowrap;
+                cursor: pointer;
+                margin-top: 20px;
+            }
+            .Slider1InstallationVideo {
+                border: 1px solid #a9a9a980;
+                border-radius: 10px;
+                padding: 10px 10px;
+                margin-top: 50px;
+                video {
+                    height: 100%;
+                    width: 100%;
+                    max-height: 70vh;
+                    z-index: 1;
+                    border-radius: 7px;
+                }
+            }
+        }
+        .Slider1Banner {
+            padding: 80px 15px 40px 15px;
+
+            .Slider1BannerTop {
+                flex-direction: column;
+                h2 {
+                    margin-top: 30px;
+                }
+            }
+        }
+
+        .Slider1Benefit {
+            padding: 30px 15px;
+            .Slider1BenefitHeader {
+                padding: 50px 15px 0px 15px;
+                border-radius: 10px 10px 0px 0px;
+                h1 {
+                    color: rgb(0, 0, 0);
+                    font-weight: 400;
+                    font-size: 35px;
+                }
+                h2 {
+                    font-weight: 400;
+                    font-size: 18px;
+                    margin-top: 20px;
+                    color: #a1a1a6;
+                    cursor: pointer;
+                }
+            }
+            .Slider1BenefitList {
+                .Slider1BenefitBox {
+                    img {
+                        max-height: 240px;
+                        min-height: 240px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1400px) {
+    .Slider1 {
+        .Slider1Header {
+            padding-right: 20%;
+            padding-left: 20%;
+        }
+        .Slider1Top {
+            padding-right: 20%;
+            padding-left: 20%;
+        }
+        .Slider1Banner {
+            padding-right: 20%;
+            padding-left: 20%;
+        }
+        .Slider1Installation {
+            padding-right: 20%;
+            padding-left: 20%;
+        }
+        .Slider1Benefit {
+            padding-right: 20%;
+            padding-left: 20%;
+        }
+    }
+}
